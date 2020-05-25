@@ -1,2 +1,2 @@
-#DALE MAESTRO con eso se comenta?
 ifconfig eth0 100.3.3.2/24 up
+route add default gw 100.3.3.1 eth0
