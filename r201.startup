@@ -1,6 +1,5 @@
+ifconfig eth0 200.1.128.2/17 up
+ifconfig eth1 200.1.0.1/18 up
 
-ifconfig eth0 200.2.0.1/16 up
-ifconfig eth1 11.0.0.33/30 up
-#faltaria el ipv6
-
-/etc/init.d/zebra start
+route add -net 200.1.64.0/18 gw 200.1.128.1 eth0
+route add default gw 200.1.0.2 eth1
