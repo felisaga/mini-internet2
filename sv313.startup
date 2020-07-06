@@ -1,0 +1,2 @@
+ifconfig eth0 213.1.64.3/18 up
+/etc/init.d/bind start
