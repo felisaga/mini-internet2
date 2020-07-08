@@ -1,0 +1,14 @@
+$TTL    60000
+@               IN      SOA     sv304.edu.mx.    root.sv304.edu.mx. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv304.edu.mx.
+sv304           IN      A       103.2.2.4
+
+unam           IN      NS      sv313.unam.edu.mx.
+sv313.unam.edu  IN   A      203.1.64.3
