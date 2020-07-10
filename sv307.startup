@@ -1,2 +1,4 @@
-ifconfig eth0 303.1.4.4/22 up
+ifconfig eth0 103.1.4.4/22 up
+route add default gw 103.1.4.1 eth0
+
 /etc/init.d/bind start
