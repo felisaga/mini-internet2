@@ -1,0 +1,17 @@
+$TTL    60000
+@               IN      SOA     sv322.mx.    root.mx. (
+                        2006031201 ; serial
+                        28 ; refresh
+                        14 ; retry
+                        3600000 ; expire
+                        0 ; negative cache ttl
+                        )
+
+@               IN      NS      sv322.mx.
+sv322           IN      A       33.3.2.3
+
+com             IN      NS      sv304.com.mx.
+sv304.com       IN      A       103.2.2.4
+
+edu             IN      NS      sv304.edu.mx.
+sv304.edu       IN      A       103.2.2.4

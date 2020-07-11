@@ -1,5 +1,5 @@
 $TTL    60000
-@               IN      SOA     sv310.oracle.com.br.    root.sv310.com.br. (
+@               IN      SOA     sv313.ufrgs.edu.br.    root.sv313.ufrgs.edu.br. (
                         2006031201 ; serial
                         28 ; refresh
                         14 ; retry
@@ -7,5 +7,5 @@ $TTL    60000
                         0 ; negative cache ttl
                         )
 
-@               IN      NS      sv310.oracle.com.br.
-sv310           IN      A       103.1.4.3
+@               IN      NS      sv313.ufrgs.edu.br.
+sv313          IN      A       203.1.64.3

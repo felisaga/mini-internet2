@@ -9,6 +9,3 @@ $TTL    60000
 
 @               IN      NS      sv313.unam.edu.mx.
 sv313           IN      A       203.1.64.3
-
-unam            IN      NS      sv313.unam.edu.mx.
-sv313.unam.edu  IN   A      203.1.64.3
