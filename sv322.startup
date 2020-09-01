@@ -2,3 +2,20 @@ ifconfig eth0 33.3.2.3/24 up
 route add default gw 33.3.2.1 eth0
 
 /etc/init.d/bind start
+
+service apache stop
+
+service nginx stop
+
+chown -R $USER:$USER /var/www/algo.mx
+chown -R $USER:$USER /var/www/algo2.mx
+
+chmod -R 755 /var/www
+
+ln -s /etc/nginx/sites-available/algo.mx /etc/nginx/sites-enabled
+ln -s /etc/nginx/sites-available/algo2.mx /etc/nginx/sites-enabled
+
+echo "33.3.2.3 algo.mx www.algo.mx" >> /etc/hosts
+echo "33.3.2.3 algo2.mx www.algo2.mx" >> /etc/hosts
+
+service nginx start

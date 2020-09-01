@@ -1,0 +1,13 @@
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name eloboost.oracle.com.mx www.eloboost.oracle.com.mx;
+
+	root /var/www/eloboost.oracle.com.mx/html;
+	index index.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}

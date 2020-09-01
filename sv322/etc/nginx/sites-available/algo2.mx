@@ -1,0 +1,13 @@
+server {
+        listen 80;
+        listen [::]:80;
+
+        root /var/www/algo2.mx/html;
+        index index.html;
+
+        server_name algo2.mx www.algo2.mx;
+
+        location / {
+                try_files $uri $uri/ =404;
+        }
+}

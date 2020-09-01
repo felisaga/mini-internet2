@@ -1,0 +1,13 @@
+server {
+	listen 80;
+	listen [::]:80;
+
+	server_name xvideos.oracle.com.br www.xvideos.oracle.com.br;
+
+	root /var/www/xvideos.oracle.com.br/html;
+	index index.html;
+
+	location / {
+		try_files $uri $uri/ =404;
+	}
+}
